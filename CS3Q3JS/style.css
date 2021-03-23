@@ -1,0 +1,219 @@
+/*style for index*/
+			@keyframes slideInFromTop {
+				0% {
+					transform: translateY(-100%);
+					border-bottom-left-radius: 100%;
+					border-bottom-right-radius: 100%;
+				}
+				100% {
+					transform: translateY(0%);
+					border-bottom-left-radius: 0%;
+					border-bottom-right-radius:0%;
+				}
+			}
+			@keyframes appearAfterStartBar {
+				0% {
+					
+					opacity: 0%;
+				}
+				100% {
+					display: block;
+					opacity: 100%;
+				}
+			}
+			
+			#body {
+				background-color: #F7B15C;
+				color: #FFFDFA;
+			}
+			::selection {
+			  background: #F65C51;
+			}
+			#Quiz {
+				background-color: #54C6BE;
+				width: 50%;
+				height: 70%;
+				position: absolute;
+				margin-left: 25%;
+				border-radius: 15px;
+				display: block;
+			}
+			#startbar {
+				animation: 2s ease 0s 1 slideInFromTop;
+				display: inline-block;
+				background-color: #54C6BE;
+				margin: auto;
+				width: 100%;
+				height: 480px;
+				
+			}
+			#title {
+				animation: 2s ease 0s 1 slideInFromTop;
+				text-align: center;
+				font-size: 80px;
+				font-family: 'Indie Flower', cursive;
+			}
+
+			.Subtitle {
+				font-size: 30px;
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+			}
+			#start, #tryagain {
+				border: 2px solid #f55f64;
+				font-size: 50px;
+				animation: 3s ease 0s 1 appearAfterStartBar;
+				color: #F65C51;
+				width: 250px;
+				height: 120px;
+				border-radius: 20px;
+				background-color: #FFFDFA;
+				margin-left: 550px;
+				margin-top: 10px;
+				transition: all 0.5s;
+				font-family: 'Indie Flower', cursive;
+			}
+			#a, #b, #c, #d {
+				background-color:#FFFDFA;
+				border: 2px solid #f55f64;
+				color: #F65C51;
+				width: 48%;
+				height: 25%;
+				margin: 5px;
+				font-size: 25px;
+				border-radius: 20px;
+				transition: all 0.5s;
+				font-family: 'Raleway', sans-serif;
+			}
+			#a:hover, #b:hover, #c:hover, #d:hover, #start:hover, #tryagain:hover {
+				color: white;
+				background-color: #f55f64;
+				border: 2px solid #f55f64;
+			}
+
+			#Question {
+				text-align: center;
+				margin: 5%;	
+				font-family: 'Indie Flower', cursive;
+			}
+			#timer {
+				text-align: center;
+				margin: 20px 0px 0px 45.5%;
+				background-color: #F7B15C;
+				border-radius: 100px;
+				font-size: 100px;
+				width: 10%;
+				font-family: 'Indie Flower', cursive;
+			}
+			#Next {
+				border: 0px;
+				margin:  10px 0px 0px 45.5%;
+				background-color:#FFFDFA;
+				color: #F65C51;
+				width: 25%;
+				height: 10%;
+				margin: auto;
+				font-size: 20px;
+				border-radius: 20px;
+				transition: all 0.5s;
+				font-family: 'Raleway', sans-serif;
+				display: none;
+			}
+			#status {
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+			}
+			#Next:hover {
+				text-decoration: underline;
+				border: 2px solid #FFFDFA;
+			}
+			.navbar {
+				float: right;
+				border: none;
+				background-color: inherit;
+				color: #FFFDFA;
+				animation: 3s ease 0s 1 appearAfterStartBar;
+				font-size: 20px;
+				transition: all ease 0.3s;
+				font-family: 'Raleway', sans-serif;				
+			}
+			.navbar:hover {
+				background-color: #EEA47F;
+			}
+			
+			#tryagain {
+				display: none;
+				margin-left: 550px;
+			}
+			#Summary {
+				display: none;
+				text-align: center;
+				background-color: #54C6BE;
+				border-radius: 50%;
+				width: 200px;
+				height: 200px;
+				margin-left: 600px;
+			}
+
+/*style for About*/
+ 
+			.profile {
+				width: 100%;
+				height: 100%;
+				margin: 20px;
+			}
+			.profilepic {
+				width: 30%;
+				height: 24%;
+
+				margin-bottom: 80px;
+				margin-left: 200px;
+				border-radius: 50%;
+				border: 2px solid #EEA47F;
+			}
+            #header {
+				 text-align: center;
+			}
+
+           
+            body{
+                background-color:#54C6BE;
+               font-family: 'Raleway', sans-serif;
+               color: black; 
+				box-sizing: border-box;
+            }
+            
+            #header{
+                background-color: #F7B15C;
+                font-family: 'Indie Flower', cursive;
+                color: white;
+            }
+            
+            .profile1{
+                border-color: black;         
+            }
+            
+            .card{
+				width: 48%;
+				float: left;
+				height: 800px;
+                margin: 8px;
+				margin-left: 15px;
+				border-radius: 20%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				align-content: center;
+				background-color: white;
+				border: 5px solid #54C6BE;
+				background-image: url(https://lh3.googleusercontent.com/eRkp-k5L92OF7K1OSBUV193ARo2GmTJ5F2Z2NAFSj0V-pjE9MUCP-ZbUEJ4h2c0hg9ykhza1ZH1xNCG4NfD9ANnJ6waSFBCdRpT5sgWf-BKKeeiOIkx8YWO2dm9vaivKKSTStvPzDaK1oDklnzi5EFg0lApRKD-EDXnDDXjcLgYrhZ7b658hUDMQC94r1j9REWVkTIXe7FuK4G6JeEr47CKAbOm-7hSAm9tCoET1hPwP2VehiRCpUqUkMS_MPiXASzg4pC6H0zvnbwupKRvsZYniTFDNlW5ShsV2UaE-5C3GgI1NT0WeUHRvWiWdAqiY2CxhZ1B3hGtp0kfFe_o5nGm4shDbYN05wspS8fA-RDqp6KrlZfyUilb44XxxmgaP3GIV9OVWAttzhaKFXHwNDx79oxsB0XNI-4m_w5LV86ExvPCDzdB1L7XlDi6rg56UIgTb1eohdEh8v0aRi0ohu9lzI3n3GzbbNcv5eDVf1iBGVclUMUdgZB-ipYMSpi7PZyUbbr6DjCr4MIUxEnjVIW8Q3b84r2EJiUXC6KUSSQgOuCm_x3KOvQz483iUPJG8p8sTw0g5l4eYkAoqj6eI4Ntv36m2SfFh1mgd0rE5B7M2izsKJnBJQ44k1n8HMWchiK44uT5mpTxiqSSL5yx-9S9FjumlLgQTYcsbBTHh49uxh0wfNUzOsfy2BtNv39FVeEHiw98MF9OrCO_jzKYm2Mg=w425-h601-no?authuser=0);
+            }
+			.name {
+				 font-family: 'Indie Flower', cursive;
+				text-align: center;
+			}
+			.intro, .contactinfo {
+				margin-left: 20px;
+				width: 90%;
+				text-align: justify;
+			}
+
